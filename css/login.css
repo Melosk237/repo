@@ -1,0 +1,108 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color:#fff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+button a{
+	text-decoration: underline;
+}
+main{
+	display: flex;
+	height: 90vh;
+	background:linear-gradient(to top, var(--color-blue),var(--color-white));
+}
+.formContainer{
+	width: 100%;
+	background-color: var(--color-blue);
+	max-width: 360px;
+	margin:auto;
+	padding: 40px;
+	border-radius: 5px;
+}
+form{
+	background:transparent;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+h1{
+	text-align: center;
+}
+h2{
+	text-align: center;
+	margin-bottom: 20px;
+
+}
+.row{
+	position: relative;
+}
+input{
+	width: 100%;
+	font-size: 17px;
+	color: var(--color-blue);
+	padding:6px 12px;
+	margin-top: 5px;
+	outline: none;
+}
+
+input[type=submit]{
+	color: #fff;
+	background-color: var(--color-blue);
+	border: 2px solid;
+	margin-bottom: .4rem;
+}
+.forgotpass{
+	font-size: .6rem;
+	text-decoration: underline;
+}
+input[type=submit]:hover{
+	color: var(--color-blue);
+	background-color: #fff;
+	transition: all 0.5s ease;
+	cursor: pointer;
+}
+input + i.bi{
+	position: absolute;
+	top: 12px;
+	right: .7rem;
+	color: var(--color-blue);
+	cursor: pointer;
+}
+button{
+	margin-top: 17px; 
+	width: 100%;
+	height: 3rem;
+	line-height: 20px;
+	color: #fff;
+	background-color: var(--color-blue);
+	border: 2px solid;
+
+}
+button i{
+	font-size: 20px;
+}
+button:hover{
+	color: var(--color-blue);
+	background-color: #fff;
+	transition: all 0.5s ease;
+	cursor: pointer;
+
+}
+button:hover a,
+button:hover i{
+	color: var(--color-blue);
+}
+
+p{
+	text-align: center;
+	margin-top: 17px;
+}
+#text {
+	text-align: center;
+	margin-top: 17px; 
+}
+#text a{
+	text-decoration: underline;
+}

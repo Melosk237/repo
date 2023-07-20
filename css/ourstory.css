@@ -1,0 +1,54 @@
+body{
+     background: linear-gradient(to top,var(--color-2)70%,var(--color-white) 30%);
+     height: auto;
+     background-repeat: no-repeat;
+}
+header{
+     margin-bottom: 0;
+}
+section{
+     width: 100%;
+     max-width: 1024px;
+     color: var(--color-white);
+     margin: auto;
+}
+.sect1{
+     position: relative;
+     height: 40vh;
+     background:linear-gradient(to top, var(--color-blueOp), var(--color-darkOp)) , url(../img/img1.jpg) center center/cover;
+     z-index: -1;
+     margin-bottom: 1rem;
+}
+.title{
+     position: absolute;
+     left: 1rem;
+     bottom: 0;
+     color: var(--color-white);
+}
+
+section >h2{
+     font-size: 1.3rem;
+     margin-bottom: .2rem;
+}
+section > p{
+     margin: 1px;
+     color: var(--color-white);
+}
+.underline{
+     display: block;
+     height: 5px;
+     width: 10rem;
+     background-color: var(--color-white);
+     margin-bottom: 1rem;
+     border-radius: 5px;
+}
+
+@media screen and (max-width:768px) {
+     body{
+          background: var(--color-2) !important;
+     }
+    
+     section p{
+          margin: 1rem;
+     }
+}

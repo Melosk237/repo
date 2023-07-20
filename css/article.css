@@ -1,0 +1,116 @@
+
+.Container{
+     width: 100%;
+     max-width: 1024px;
+     display: grid;
+     grid-template-columns: 70% auto;
+     margin:0 auto;
+     background-color: var(--color-2);
+}
+main{
+     color: var(--color-white);
+}
+.articleMenu{
+     position: relative;
+     display: none;
+     align-items: center;
+     justify-content: right;
+     padding: 1rem;
+}
+.articleMenu span{
+     cursor: pointer;
+}
+.articleCount{
+     position: absolute;
+     right: .4rem;
+     top: .4rem;
+     width: 20px;
+     height: 20px;
+     background-color: var(--color-white);
+     color: var(--color-blue);
+     border-radius: 50%;
+     text-align: center;
+     pointer-events: none;
+}
+.image{
+     width: 100%;
+     height: 300px;
+     
+}
+aside{
+     color: var(--color-white);
+     padding: 1rem;
+     transition: var(--transition);
+}
+aside > div:first-child{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: .5rem;
+}
+.close{
+     font-size: 2rem;
+     cursor: pointer;
+     display: none;
+     color: var(--color-white);
+}
+main h2, main p{
+     max-width: 540px;
+     margin:.5rem auto;
+     text-align: left;
+}
+.articleText{
+     margin-bottom: 1rem;
+}
+.Aside_article{
+     border:2px solid var(--color-white);
+     padding: .5rem;
+     margin-bottom: 1rem;
+     cursor:pointer;
+     background-color: transparent;
+     transition: var(--transition);
+}
+.Aside_article:hover{
+     transform: scale(1.1);
+}
+
+.Aside_article p, .Aside_article h3{
+     color: var(--color-white);
+}
+@media screen  and (max-width:768px) {
+     
+     .Container{
+          grid-template-columns: 100%;
+          position: relative;
+     }
+     main h2, main p{
+          width: auto;
+          margin:0;
+     }
+     .articleMenu{
+          display: flex;
+     }
+     aside{
+          position: fixed;
+          top: 10vh;
+          left: 0;
+          transform: translateX(100%);
+          width: 100%;
+          height: 100vh;
+          z-index: 0;
+          background-color: var(--color-blue);
+     }
+     .close{
+          display: block;
+     }
+     .active1{
+          transform: translateX(0);
+     }
+     .layer{
+          z-index: -1;
+     }
+     .topic,
+     .articleText{
+          margin: 1rem;
+     }
+}
